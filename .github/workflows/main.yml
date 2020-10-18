@@ -1,8 +1,8 @@
 name: Start SSH via ngrok
-  uses: puki56/ssh2actions@main
-  with:
-    mode: ngrok
-  env:
+uses: puki56/ssh2actions@main
+ with:
+ mode: ngrok
+env:
     # After sign up on the https://ngrok.com
     # You can find this token here: https://dashboard.ngrok.com/auth/your-authtoken
     NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
