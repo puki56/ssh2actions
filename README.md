@@ -14,7 +14,7 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 ### Connect to Github Actions VM via SSH by using [tmate](https://tmate.io)
 
 ```yaml
-- name: Start SSH via tmate
+  name: Start SSH via tmate
   uses: puki56/ssh2actions@main
   # Send connection info to Telegram (optional)
   # You can find related documents here: https://core.telegram.org/bots
@@ -26,7 +26,7 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 ### Connect to Github Actions VM via SSH by using [ngrok](https://ngrok.com)
 
 ```yaml
-- name: Start SSH via ngrok
+  name: Start SSH via ngrok
   uses: puki56/ssh2actions@main
   with:
     mode: ngrok
