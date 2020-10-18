@@ -1,0 +1,20 @@
+- name: Start SSH via ngrok
+  uses: puki56/ssh2actions@main
+  with:
+    mode: ngrok
+  env:
+    # After sign up on the https://ngrok.com
+    # You can find this token here: https://dashboard.ngrok.com/auth/your-authtoken
+    NGROK_TOKEN: 1av9cKOhDGMLsi3osyODlJLG00x_866BaYW2W1kiqiWNKaTRm
+    
+    # ngrok server region [us, eu, au, ap, sa, jp, in] (optional, default: us)
+    # You can find this server region here: https://ngrok.com/docs#global-locations
+    NGROK_REGION: us
+
+    # This password you will use when authorizing via SSH
+    SSH_PASSWORD: 5201314
+
+    # Send connection info to Telegram (optional)
+    # You can find related documents here: https://core.telegram.org/bots
+    TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+    TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
