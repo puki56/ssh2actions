@@ -27,7 +27,7 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 
 ```yaml
 - name: Start SSH via ngrok
-  uses: P3TERX/ssh2actions@main
+  uses: puki56/ssh2actions@main
   with:
     mode: ngrok
   env:
