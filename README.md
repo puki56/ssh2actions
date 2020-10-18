@@ -15,7 +15,7 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 
 ```yaml
 - name: Start SSH via tmate
-  uses: P3TERX/ssh2actions@main
+  uses: puki56/ssh2actions@main
   # Send connection info to Telegram (optional)
   # You can find related documents here: https://core.telegram.org/bots
   env:
